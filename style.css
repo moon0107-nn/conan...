@@ -104,7 +104,26 @@ html {
 }
 #slider {
     height: 600px;
-    width: 100%;
+    width: 100vw;
+    position: relative;
+}
+#slider .content__banner {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    color: white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#slider .content__banner .section-heading {
+    font-size: 4rem;
+    margin-top: 100px;
+}
+#slider .content__banner .section-sub-heading {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 #slider img {
     width: 100%;
@@ -203,7 +222,6 @@ html {
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
-    z-index: 999;
 }
 
 #content .section-heading {
@@ -228,7 +246,7 @@ html {
     min-width: 320px;
     max-width: 786px;
     height: auto;
-    margin-top: 25px;
+    margin-top: 250px;
 }
 
 #content .about-text {
